@@ -1,5 +1,9 @@
 package JavaJuniorCourse.src;
 
+import JavaJuniorCourse.src.Chess.ChessPiece;
+import JavaJuniorCourse.src.Chess.King;
+import JavaJuniorCourse.src.Chess.Pawn;
+
 import java.util.Scanner;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
@@ -8,10 +12,17 @@ public class Main {
     public static void main(String[] args) {
         //exercise1();
         //exercise2();
-//        exercise3();
-      //  exercise4();
-        exercise5("ayslu 1104");
+        //exercise3();
+        // exercise4();
+        //exercise5("ayslu 1104");
 
+      ChessPiece king = new King(0, 5, 10, true);
+      king.act();
+      king.fight();
+
+      ChessPiece pawn = new Pawn(1,0, 1, false);
+      pawn.act();
+      pawn.fight();
     }
 
         public static void exercise1(){
